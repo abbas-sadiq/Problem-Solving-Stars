@@ -99,11 +99,24 @@ public class StarTasks {
 
     public void showTask8(){
         System.out.println("\nTask -> 8\n");
+        int x = 9;
 
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j <= i; j++) {
 
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < x; j++) {
+                if (j < x - i) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print(" ");
+                }
+
             }
             System.out.println();
         }
@@ -111,16 +124,21 @@ public class StarTasks {
 
     }
 
-    public void showTask9(){
+    public void showTask9() {
         System.out.println("\nTask -> 9\n");
 
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j <= i; j++) {
+        int y = 10;
+        for (int i = 0; i <= y; i++) {
+            for (int j = 0; j < y; j++) {
+                if (j < i) {
+                    System.out.print("  ");
+                } else {
+                    System.out.print("* ");
+                }
 
-                System.out.print("* ");
             }
             System.out.println();
-        }
 
+        }
     }
 }

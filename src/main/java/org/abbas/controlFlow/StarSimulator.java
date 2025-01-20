@@ -1,16 +1,16 @@
 package org.abbas.controlFlow;
-
 public class StarSimulator {
     public static void main (String[] args){
-        StarTasks task = new StarTasks();
-        task.showTask1();
-        task.showTask2();
-        task.showTask3();
-        task.showTask4();
-        task.showTask5();
-        task.showTask6();
-        task.showTask7();
-
+        StarTasks star = new StarTasks();
+        star.showTask1();
+        star.showTask2();
+        star.showTask3();
+        star.showTask4();
+        star.showTask5();
+        star.showTask6();
+        star.showTask7();
+        star.showTask8();
+        star.showTask9();
 
     }
 }
