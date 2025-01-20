@@ -41,15 +41,14 @@ public class StarTasks {
     }
 
 
-
     public void showTask5() {
         System.out.println("\nTask -> 5\n");
         int x = 10;
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < x; j++) {
-                if(j < x-i) {
+                if (j < x - i) {
                     System.out.print("* ");
-                }else {
+                } else {
                     System.out.print(" ");
                 }
 
@@ -61,15 +60,15 @@ public class StarTasks {
     }
 
 
-    public void showTask6(){
+    public void showTask6() {
         System.out.println("\nTask -> 6\n");
-        int x =10;
+        int x = 10;
 
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < x; j++) {
-                if(j >= x-i-1) {
+                if (j >= x - i - 1) {
                     System.out.print("* ");
-                }else{
+                } else {
                     System.out.print(("  "));
                 }
             }
@@ -79,14 +78,14 @@ public class StarTasks {
 
     }
 
-    public void showTask7(){
+    public void showTask7() {
         System.out.println("\nTask -> 7\n");
         int y = 10;
         for (int i = 0; i <= y; i++) {
             for (int j = 0; j < y; j++) {
-                if(j < i ) {
+                if (j < i) {
                     System.out.print("  ");
-                }else{
+                } else {
                     System.out.print("* ");
                 }
 
@@ -97,7 +96,7 @@ public class StarTasks {
 
     }
 
-    public void showTask8(){
+    public void showTask8() {
         System.out.println("\nTask -> 8\n");
         int x = 9;
 
@@ -126,14 +125,14 @@ public class StarTasks {
 
     public void showTask9() {
         System.out.println("\nTask -> 9\n");
-
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j <= 10-1; j++) {
-
-                System.out.print("");
-            }
-            for(int j = 1; j<=i; j++){
-                System.out.print(" *");
+        int n = 10;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j >= n - i - 1) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
             }
             System.out.println();
         }
@@ -151,5 +150,7 @@ public class StarTasks {
             System.out.println();
 
         }
+
     }
+
 }
