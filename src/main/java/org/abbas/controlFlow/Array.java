@@ -9,6 +9,8 @@ public class Array {
         int[] numberArray = split(number);
         int count = count(number);
         System.out.println("input " + number);
+        int[] split = split(number);
+
         System.out.println("output :" + split(number));
         splitEventNumbers(expectedArray);
         splitOddNumbers(expectedArray);
@@ -37,17 +39,19 @@ public class Array {
     }
 
     public static int[] split(int number){
-        String numberString =Integer.toString(number);
-        int [] result = new int[numberString.length()];
-        for(int i = 0; i < numberString.length(); i++){
-            result[i] =Character.getNumericValue(numberString.charAt(i));
+        number = 123456789;
+        int[] ars = new int[number];
+        for(int i = 0; i < number; i++){
+            ars[i] = number % 10;
+            number /= 10;
+
         }
-        return result;
+        return ars;
     }
 
     public static int count(int number){
 
-        return Integer.toString(number).length();
+        return number;
     }
 
 
