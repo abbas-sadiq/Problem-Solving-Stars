@@ -1,17 +1,21 @@
 package org.abbas.controlFlow;
 
 
+import java.util.Arrays;
+
 public class Array {
     public static void main(String[] args) {
 
         int number = 123456789;
         int[] expectedArray = new int[]{1,2,3,4,5,6,7,8,9};
-        int[] numberArray = split(number);
-        int count = count(number);
         System.out.println("input " + number);
-        int[] split = split(number);
+        int[] splitArray = split(number);
+        for (int i = 0; i < splitArray.length; i++) {
+            System.out.println();
 
-        System.out.println("output :" + split(number));
+        }
+
+        System.out.println("output :" + Arrays.toString(splitArray));
         splitEventNumbers(expectedArray);
         splitOddNumbers(expectedArray);
 
@@ -39,14 +43,16 @@ public class Array {
     }
 
     public static int[] split(int number){
-        number = 123456789;
-        int[] ars = new int[number];
-        for(int i = 0; i < number; i++){
-            ars[i] = number % 10;
-            number /= 10;
+
+        int[] splitArray = new int[]{number};
+        while(number < 0){
+            int a= number % 10;
+            System.out.println(a);
+            number = number / 10;
 
         }
-        return ars;
+
+        return splitArray;
     }
 
     public static int count(int number){
