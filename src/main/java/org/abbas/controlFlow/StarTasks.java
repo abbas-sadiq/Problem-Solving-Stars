@@ -83,10 +83,10 @@ public class StarTasks {
         int y = 10;
         for (int i = 0; i <= y; i++) {
             for (int j = 0; j < y; j++) {
-                if (j < i) {
-                    System.out.print("  ");
-                } else {
+                if (j == i || j > i) {
                     System.out.print("* ");
+                } else {
+                    System.out.print(" ");
                 }
 
             }
@@ -115,42 +115,35 @@ public class StarTasks {
                 } else {
                     System.out.print(" ");
                 }
-
             }
             System.out.println();
         }
 
-
     }
 
-    public void showTask9() {
-        System.out.println("\nTask -> 9\n");
+    public void displayTask9() {
+        System.out.println("Task -> 9");
         int n = 10;
-        for (int i = 0; i < n; i++) {
+
+        for (int i = 0; i < 2 * n; i++) {
             for (int j = 0; j < n; j++) {
-                if (j >= n - i - 1) {
-                    System.out.print("* ");
+                if (i < n) {
+                    if (j >= n - i - 1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
                 } else {
-                    System.out.print("  ");
+                    if (j >= i-n+1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
                 }
             }
             System.out.println();
         }
-
-        int y = 10;
-        for (int i = 0; i <= y; i++) {
-            for (int j = 0; j < y; j++) {
-                if (j < i) {
-                    System.out.print("  ");
-                } else {
-                    System.out.print("* ");
-                }
-
-            }
-            System.out.println();
-
-        }
-
     }
+
 
 }
