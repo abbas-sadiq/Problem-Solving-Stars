@@ -2,21 +2,21 @@ package org.abbas.controlFlow;
 
 public class StarTasks {
 
-    public void showTask1() {
+    public void displayHorizontalLine() {
         System.out.println("\nTask -> 1\n");
         for (int i = 0; i < 10; i++) {
             System.out.print(" * ");
         }
     }
 
-    public void showTask2() {
+    public void displayVerticalLine() {
         System.out.println("\nTask -> 2\n");
         for (int i = 0; i < 10; i++) {
             System.out.println(" * ");
         }
     }
 
-    public void showTask3() {
+    public void displaySquare() {
         System.out.println("\nTask -> 3\n");
         for (int i = 0; i < 10; i++) {
             System.out.print("\n * ");
@@ -28,7 +28,7 @@ public class StarTasks {
         System.out.println(" ");
     }
 
-    public void showTask4() {
+    public void displayLeftSideTriangle() {
         System.out.println("\nTask -> 4\n");
 
         for (int i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ public class StarTasks {
     }
 
 
-    public void showTask5() {
+    public void displayLeftSideDownTriangle() {
         System.out.println("\nTask -> 5\n");
         int x = 10;
         for (int i = 0; i < x; i++) {
@@ -60,7 +60,7 @@ public class StarTasks {
     }
 
 
-    public void showTask6() {
+    public void displayRightSideTriangle() {
         System.out.println("\nTask -> 6\n");
         int x = 10;
 
@@ -78,7 +78,7 @@ public class StarTasks {
 
     }
 
-    public void showTask7() {
+    public void displayRightSideDownTriangle() {
         System.out.println("\nTask -> 7\n");
         int y = 10;
         for (int i = 0; i <= y; i++) {
