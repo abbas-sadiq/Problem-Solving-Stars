@@ -84,7 +84,7 @@ public class StarTasks {
         for (int i = 0; i <= y; i++) {
             for (int j = 0; j < y; j++) {
                 if (j == i || j > i) {
-                    System.out.print("* ");
+                    System.out.print("*");
                 } else {
                     System.out.print(" ");
                 }
@@ -136,6 +136,30 @@ public class StarTasks {
                 } else {
                     if (j >= i-n+1) {
                         System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+    public void displayDiamond(){
+
+        System.out.println("Task -> 10");
+        int n = 21;
+
+        for (int i = 0; i <=2 * n-1; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i < n) {
+                    if (j >= n - i - 1) {
+                        System.out.print(" *");
+                    } else {
+                        System.out.print(" ");
+                    }
+                } else {
+                    if (j >= i-n+1) {
+                        System.out.print(" *");
                     } else {
                         System.out.print(" ");
                     }
