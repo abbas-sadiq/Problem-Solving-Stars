@@ -2,21 +2,21 @@ package org.abbas.controlFlow;
 
 public class StarTasks {
 
-    public void showTask1() {
+    public void displayHorizontalLine() {
         System.out.println("\nTask -> 1\n");
         for (int i = 0; i < 10; i++) {
             System.out.print(" * ");
         }
     }
 
-    public void showTask2() {
+    public void displayVerticalLine() {
         System.out.println("\nTask -> 2\n");
         for (int i = 0; i < 10; i++) {
             System.out.println(" * ");
         }
     }
 
-    public void showTask3() {
+    public void displaySquare() {
         System.out.println("\nTask -> 3\n");
         for (int i = 0; i < 10; i++) {
             System.out.print("\n * ");
@@ -28,7 +28,7 @@ public class StarTasks {
         System.out.println(" ");
     }
 
-    public void showTask4() {
+    public void displayLeftSideTriangle() {
         System.out.println("\nTask -> 4\n");
 
         for (int i = 0; i < 10; i++) {
@@ -41,7 +41,7 @@ public class StarTasks {
     }
 
 
-    public void showTask5() {
+    public void displayLeftSideDownTriangle() {
         System.out.println("\nTask -> 5\n");
         int x = 10;
         for (int i = 0; i < x; i++) {
@@ -60,7 +60,7 @@ public class StarTasks {
     }
 
 
-    public void showTask6() {
+    public void displayRightSideTriangle() {
         System.out.println("\nTask -> 6\n");
         int x = 10;
 
@@ -78,15 +78,15 @@ public class StarTasks {
 
     }
 
-    public void showTask7() {
+    public void displayRightSideDownTriangle() {
         System.out.println("\nTask -> 7\n");
         int y = 10;
         for (int i = 0; i <= y; i++) {
             for (int j = 0; j < y; j++) {
-                if (j < i) {
-                    System.out.print("  ");
+                if (j == i || j > i) {
+                    System.out.print("*");
                 } else {
-                    System.out.print("* ");
+                    System.out.print(" ");
                 }
 
             }
@@ -115,42 +115,89 @@ public class StarTasks {
                 } else {
                     System.out.print(" ");
                 }
-
             }
             System.out.println();
         }
-
 
     }
 
-    public void showTask9() {
+    public void displayTask9() {
         System.out.println("\nTask -> 9\n");
         int n = 10;
-        for (int i = 0; i < n; i++) {
+
+        for (int i = 0; i < 2 * n; i++) {
             for (int j = 0; j < n; j++) {
-                if (j >= n - i - 1) {
-                    System.out.print("* ");
+                if (i < n) {
+                    if (j >= n - i - 1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
                 } else {
-                    System.out.print("  ");
+                    if (j >= i-n+1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
                 }
             }
             System.out.println();
         }
+    }
+    public void displayDiamond(){
 
-        int y = 10;
-        for (int i = 0; i <= y; i++) {
-            for (int j = 0; j < y; j++) {
-                if (j < i) {
-                    System.out.print("  ");
+        System.out.println("\nTask -> 10\n");
+        int n = 21;
+
+        for (int i = 0; i <=2 * n-1; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i < n) {
+                    if (j >= n - i - 1) {
+                        System.out.print(" *");
+                    } else {
+                        System.out.print(" ");
+                    }
                 } else {
-                    System.out.print("* ");
+                    if (j >= i-n+1) {
+                        System.out.print(" *");
+                    } else {
+                        System.out.print(" ");
+                    }
                 }
-
             }
             System.out.println();
+        }
+    }
 
+    public void displayDiamond1() {
+        System.out.println("\nTask -> 10\n");
+        int n = 21; // Adjust for diamond height (half of the total rows)
+
+        // Upper part of the diamond
+        for (int i = 0; i < n; i++) {
+            // Print leading spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
 
+        // Lower part of the diamond
+        for (int i = n - 2; i >= 0; i--) {
+            // Print leading spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            // Print stars
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 
 }
